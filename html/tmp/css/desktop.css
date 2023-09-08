@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: rgb(3,13,32);
+    background: linear-gradient(90deg, rgba(3,13,32,1) 0%, rgba(1,37,66,1) 32%, rgba(1,37,66,1) 85%, rgba(3,13,32,1) 100%); 
+    overscroll-behavior: none;
+    scroll-behavior: auto;
+}
+
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;   
+}
+
+article {
+    margin-bottom: 10vh;
+}
+
+header {
+    margin-top: 10vh;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    color:  #EBE8E2;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color:  #EBE8E2;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #b9d6f2; 
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    color: #006daa;
+}
+
+.site-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-side {
+    height: 100%;
+    flex: 0 0 auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+.left-side > * {
+    flex-grow: 1;
+    min-height: 300px;
+}
+
+.right-side {
+    flex: 1;
+    overflow-y: scroll;
+    margin-top: 10vh;
+    margin-left: 40vw;
+    margin-bottom: 10vh;
+}
+
+.header-container {
+    display: table;
+    width: 1%;
+}
+
+.nav-container {
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #0353a4; 
+}
+
+.nav-container a:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.nav-container div {
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */
+    margin-bottom: 1rem;
+}
+
+.nav-container p {
+    display: inline;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+    color: #0353a4; 
+}
+
+.active::before {
+    vertical-align: middle;
+    content: '•';
+    color: cyan;
+    font-size: 1.4em;
+    margin-right: 1rem;
+    display: inline-block; /* Add this line to center the bullet */
+    line-height: 1; /* Add this line to center vertically */
+}
+
+.active a {
+    display: inline;
+    color: #b9d6f2;
+}
+
+.footer-container {
+}
+
+.footer-icon {
+    display: inline-block;
+    width: fit-content;
+    margin-right: 2rem;
+}
+
+.footer-icon img {
+    height: 30px;
+    filter: invert(24%) sepia(99%) saturate(1778%) hue-rotate(181deg) brightness(92%) contrast(102%);
+}
+
+.footer-container img:hover {
+    cursor: pointer;
+    filter: invert(81%) sepia(49%) saturate(1168%) hue-rotate(120deg) brightness(104%) contrast(106%);
+}
+
+.card-container {
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.card-container:hover {
+    background-color: rgba(0, 53, 89, 1);
+    cursor: pointer;
+    border-top: 1px solid #006daa;
+}
+
+.card-container:hover h3 {
+    color: cyan;
+}
+
+.card-container:hover .arrow img {
+    filter: invert(81%) sepia(49%) saturate(1168%) hue-rotate(120deg) brightness(104%) contrast(106%);
+    transform: translate(5px, -5px);
+}
+
+.card-container:hover .badge {
+    background-color: #006daa;
+}
+
+.card-container:hover .card-thumb img {
+    border: 2px solid #b9d6f2;
+}
+
+.card-thumb {
+    height: fit-content;
+    width: fit-content;
+}
+
+.card-thumb img {
+    border: 2px solid #006daa;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.card-role h2 {
+    color: #b9d6f2;
+}
+
+.card-description {
+    margin-top: 1rem;
+}
+
+.card-badges {
+    margin-top: 1rem;
+}
+
+.card-badges div {
+    margin-top: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #003559;
+    width: fit-content;
+    padding: .25rem .75rem .25rem .75rem;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+
+.badge p {
+    display: inline;
+    color: cyan;
+    font-size: .8rem;
+}
+
+.card-title h3 {
+    display: inline;
+}
+
+.arrow img {
+    vertical-align: bottom;
+    display: inline;
+    filter: invert(24%) sepia(99%) saturate(1778%) hue-rotate(181deg) brightness(92%) contrast(102%);
+    transition: all 0.2s ease;
+}
+
+.dates {
+    width: fit-content;
+}
+.dates p {
+    white-space: nowrap;
+    display: inline;
+    vertical-align: bottom;
+}
+
+.dates h3 {
+    display: inline;    
+}
+
+.year {
+    font-weight: 300;
+    display: inline;
+    color: #b9d6f2;
+}
+
+.view-link {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+.view-link h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.view-link h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    /* background-color: #0087ca; */
+    background: linear-gradient(
+        to right,
+        #0353a4 20%,
+        cyan 30%,
+        #006daa 70%,
+        #0353a4 80%
+    );
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+    /* transform-origin: bottom right; */
+    transform-origin: center;
+    transition: transform 0.1s ease-out;
+    
+}
+
+.view-link a {
+    text-decoration: none;
+}
+
+.view-link h2:hover::after {
+    transform: scaleX(1);
+  /* transform-origin: bottom left; */
+    transform-origin: center;
+}
+
+.view-link h2 {
+    display: inline;
+    font-weight: 400;
+    transition: all 0.4s ease;
+    color: #b9d6f2; 
+}
+
+.view-link img {
+    vertical-align: bottom;
+    display: inline;
+    filter: invert(24%) sepia(99%) saturate(1778%) hue-rotate(181deg) brightness(92%) contrast(102%);
+    transition: all 0.2s ease;
+}
+
+.view-link:hover {
+    cursor: pointer;
+}
+
+.view-link:hover h2 {
+    color:  #EBE8E2;
+    /* text-decoration: underline; */
+}
+
+.view-link:hover .arrow img {
+    filter: invert(81%) sepia(49%) saturate(1168%) hue-rotate(120deg) brightness(104%) contrast(106%);
+    transform: translate(5px, -5px);
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.shout-out-container p {
+    font-size: .8rem;
+}
+
+.shout-out-container a {
+    text-decoration: none;
+}
+
+.shout-out-container a:visited {
+    color: cyan;
+    text-decoration: none;
+}

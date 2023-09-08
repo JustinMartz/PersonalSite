@@ -1,171 +1,184 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;1,600&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;900&family=Noto+Sans+Malayalam&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/main.css" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/test.css">
         <title>Justin Martz</title>
     </head>
-
     <body>
-        <header>
-            <h1>Justin Martz</h1>
-            <h2>Java Full-stack</h2>
-        </header>
-
-        <nav id="nav-bar">
-            <ul>
-                <li><a class="link-button active" href="#about" >About</a></li>
-                <li><a class="link-button" href="#projects" >Projects</a></li>
-                <li><a class="link-button" href="#contact">Contact</a></li>
-                <li><a class="link-button" href="#resume">Resume</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <article id="articles">
-                <div class="sections about-container" id="about">
-                    <div class="about-container">
-                        <div class="about-text">
-                            <p>For the lack of a better word I call them hangy downs. Let that brush dance around there and play. All you have to learn here is how to have fun. Even the worst thing we can do here is good. This is your world. You can bend rivers. But when I get home, the only thing I have power over is the garbage.</p>
-                            <br>
-                            <p>The only thing worse than yellow snow is green snow. By now you should be quite happy about what's happening here. Let's have a little bit of fun today.</p>
+        <div class="site-container">
+            <div class="left-side">
+                <header>
+                    <div class="header-container">
+                        <h1>Justin Martz</h1>
+                        <h2>Full-stack Java</h2>
+                        <p>Building robust, RESTful backends with accessible, creative frontends.</p>
+                    </div>
+                </header>
+                
+                <nav>
+                    <div class="nav-container">
+                        <div class="nav-link"><p><a href="#about">ABOUT</a></p></div>
+                        <div class="nav-link"><p><a href="#projects">PROJECTS</a></p></div>
+                        <div class="nav-link"><p><a href="#experience">EXPERIENCE</a></p></div>
+                    </div>
+                </nav>
+                
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-icon">
+                        <a target="_blank" href="https://github.com/JustinMartz"><img src="images/github.svg" /></a>
                         </div>
-                        <div class="about-picture">
-                            <img src="images/photo.jpg" />
+                        <div class="footer-icon">
+                        <a target="_blank" href="https://www.linkedin.com/in/justin-martz/"><img src="images/linkedin.svg" /></a>
                         </div>
                     </div>
-                    <div class="galleria">
-                        <img src="images/renfest-600w.jpg">
-                    </div>
-                    <script>
-                        (function() {
-                            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
-                            Galleria.run('.galleria');
-                        }());
-                    </script>
-                </div>
+                </footer>
+            </div>
             
-            <div class="sections" id="projects">
-                <div class="projects-container">
-                    <div class="project">
-                        <img src="images/housefire.jpg">
-                        <h1>Urban Wildfire Simulator</h1>
-                        <p>Enter your location, set the weather conditions, and analyze the aftermath!</p>
+            <div class="right-side">
+                <article id="about">
+                    <p>Hello! My name is Justin and I am a recent Skill Distillery full-stack Java graduate living on Colorado's Front Range. My experience is in the full-stack realm building backends with MySQL and Spring Boot and front ends with Angular and TypeScript.</p> 
+                    <br>
+                    <p>I've loved programming since I was a kid making text-based games in QuickBASIC, and can't wait to take this hobby full-time. I'm always learning and expanding my skillset by making new projects.</p>
+                    <br>
+                    <p>When I'm not coding I'm either playing guitar or (more likely) working in the back yard with my wife or (even more likely) hanging out with my kids. </p>
+                    <br>
+                    <p>Check out my projects to see some things I've made!</p>
+                </article>
+                
+                <article id="projects">
+                    <div id="guitartech" class="card-container">
+                        <div class="card-thumb">
+                            <img src="images/guitartech-thumb.png" />
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h3>GuitarTech</h3>
+                                <span class="arrow">
+                                    <img src="images/up-right-arrow.svg" />
+                                </span>
+                            </div>
+                            <div class="card-description">
+                                <p>Full-stack web app where users can keep track of their guitars and each guitar's setup. Search guitar by color, tuning, and bridge type!</p>
+                            </div>
+                            <div class="card-badges">
+                                <div class="badge"><p>Angular</p></div>
+                                <div class="badge"><p>Spring Boot</p></div>
+                                <div class="badge"><p>MySQL</p></div>
+                                <div class="badge"><p>RESTful API</p></div>
+                                <div class="badge"><p>CSS</p></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project">
-                        <img src="images/man.jpg">
-                        <h1>Election 2024</h1>
-                    </div>
-                    <div class="project">
-                        <img src="images/scale.jpg">
-                        <h1>Scale Buddy</h1>
-                    </div>
-                    <div class="project">
-                        <img src="images/therapy.jpg">
-                        <h1>Therapy HQ</h1>
+                    
+                    <div id="duality" class="card-container">
+                        <div class="card-thumb">
+                            <img src="images/duality-thumb.png" />
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h3>Duality</h3>
+                                <span class="arrow">
+                                    <img src="images/up-right-arrow.svg" />
+                                </span>
+                            </div>
+                            <div class="card-description">
+                                <p>Duality allows users to track their daily moods and attitudes using a daily mental well being test. The data is then tracked and saved on an interactive calendar where users can then see how they compare to past days and can in turn find general patterns for a potential upscale in their lifestyles.</p>
+                            </div>
+                            <div class="card-badges">
+                                <div class="badge"><p>Angular</p></div>
+                                <div class="badge"><p>Spring Boot</p></div>
+                                <div class="badge"><p>MySQL</p></div>
+                                <div class="badge"><p>Spring Security</p></div>
+                                <div class="badge"><p>Full-stack</p></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="sections" id="contact">
-                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="justin-martz" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/justin-martz?trk=profile-badge"></a></div>
-            </div>
-
-            <div class="sections" id="resume" style="display: none">
-                <h1>resume page</h1>
-                <p>Get away from those little Christmas tree things we used to make in school. There's nothing wrong with having a tree as a friend. I sincerely wish for you every possible joy life could bring.
-
-                    There is no right or wrong - as long as it makes you happy and doesn't hurt anyone. Let your heart be your guide. Trees get lonely too, so we'll give him a little friend.</p>
-            </div>
-        </article>
-    </main>
-        
-        <!-- Photo by <a href="https://unsplash.com/@joetography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joe Dudeck</a> on <a href="https://unsplash.com/s/photos/colorado?license=free&utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  -->
-
+                
+                <div id="parkpals" class="card-container">
+                    <div class="card-thumb">
+                        <img src="images/park-pals-thumb.png" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Park Pals</h3>
+                            <span class="arrow">
+                                <img src="images/up-right-arrow.svg" />
+                            </span>
+                        </div>
+                        <div class="card-description">
+                            <p>Park Pals allows registered users to create, join, unattend, or delete meetups with other users. Meetups and discussions are centered around our national parks.</p>
+                        </div>
+                        <div class="card-badges">
+                            <div class="badge"><p>Agile</p></div>
+                            <div class="badge"><p>Pair programming</p></div>
+                            <div class="badge"><p>MySQL</p></div>
+                            <div class="badge"><p>Apache Tomcat</p></div>
+                            <div class="badge"><p>Jakarta Server Pages</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-link">
+                    <a target="_blank" href="https://github.com/JustinMartz?tab=repositories">
+                        <h2>View all GitHub projects</h2>
+                    </a>
+                    <span class="arrow"><img src="images/up-right-arrow.svg" /></span>
+                </div>
+            </article>
+            
+            <article id="experience">
+                <div class="card-container">
+                    <div class="dates">
+                        <p><span class="year">2023 </span>MAY - SEP</p><h3>&nbsp;</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Skill Distillery</h3>
+                            <span class="arrow">
+                                <img src="images/up-right-arrow.svg" />
+                            </span>
+                        </div>
+                        <div class="card-role">
+                            <h2>Full-stack Java Developer Graduate</h2>
+                        </div>
+                        <div class="card-description">
+                            <p>Intensive, immersive, unrelenting full-stack Java developer program teaching a group of core front-end and back-end technologies from the ground up.</p>
+                            <br>
+                            <p>Week after week we were tasked with designing, building, and deploying full-stack applications.</p>
+                        </div>
+                        <div class="card-badges">
+                            <div class="badge"><p>Java</p></div>
+                            <div class="badge"><p>Agile</p></div>
+                            <div class="badge"><p>Pair programming</p></div>
+                            <div class="badge"><p>git</p></div>
+                            <div class="badge"><p>Spring JPA</p></div>
+                            <div class="badge"><p>Spring Boot</p></div>
+                            <div class="badge"><p>Spring Security</p></div>
+                            <div class="badge"><p>Angular</p></div>
+                            <div class="badge"><p>Unit testing</p></div>
+                            <div class="badge"><p>JavaScript</p></div>
+                            <div class="badge"><p>Debugging</p></div>
+                            <div class="badge"><p>SQL</p></div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="view-link">
+                    <a target="_blank" href="Resume-Justin-Martz.pdf">
+                        <h2>View full resume</h2>
+                    </a>
+                    <span class="arrow"><img src="images/up-right-arrow.svg" /></span>
+                </div>
+            </article>
+            
+            <article id="shout-out">
+                <div class="shout-out-container">
+                    <p>This website is heavily inspired and adapted from <a href="https://brittanychiang.com" target="_blank">Brittany Chiang</a>'s portfolio site. Built without frameworks or libraries by Justin Martz, using just CSS, HTML, and JavaScript.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script src="test.js"></script>
 </body>
-<script>
-    const pageHash = window.location.hash;
-    console.log(pageHash);
-    switch (pageHash) {
-        case '#projects':
-            console.log('in switch case #projects');
-            showProjects();
-            break;
-        case '#contact':
-            console.log('in switch case #contact')
-            showContact();
-            break;
-            default:
-            document.getElementById("about").style.display = "block";
-    } 
-    
-
-    var navbar = document.getElementById("nav-bar");
-    var buttons = navbar.getElementsByClassName("link-button");
-    var articles = document.getElementById("articles");
-    var pages = document.getElementsByClassName("sections");
-
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-
-            if (this.getAttribute("href") === "#resume") {
-                showResume();
-            } else if (this.getAttribute("href") === "#about") {
-                showAbout();
-            } else if (this.getAttribute("href") === "#projects") {
-                showProjects();
-            } else if (this.getAttribute("href") === "#contact") {
-                showContact();
-            }
-        });
-    }
-
-    function showResume() {
-        var x = document.getElementById("resume");
-
-        x.style.display = "block";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-    }
-
-    function showAbout() {
-        var x = document.getElementById("about");
-        x.style.display = "block";
-        document.getElementById("resume").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-    }
-
-    function showProjects() {
-        var x = document.getElementById("projects");
-       
-        x.style.display = "block";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("resume").style.display = "none"; 
-        document.getElementById("contact").style.display = "none";
-    }
-    
-    function showContact() {
-        var x = document.getElementById("contact");
-       
-        x.style.display = "block";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("resume").style.display = "none"; 
-        document.getElementById("projects").style.display = "none";
-    }
-</script>
-
 </html>
