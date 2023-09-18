@@ -1,184 +1,232 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/test.css">
-        <title>Justin Martz</title>
-    </head>
-    <body>
-        <div class="site-container">
-            <div class="left-side">
-                <header>
-                    <div class="header-container">
-                        <h1>Justin Martz</h1>
-                        <h2>Full-stack Java</h2>
-                        <p>Building robust, RESTful backends with accessible, creative frontends.</p>
-                    </div>
-                </header>
-                
-                <nav>
-                    <div class="nav-container">
-                        <div class="nav-link"><p><a href="#about">ABOUT</a></p></div>
-                        <div class="nav-link"><p><a href="#projects">PROJECTS</a></p></div>
-                        <div class="nav-link"><p><a href="#experience">EXPERIENCE</a></p></div>
-                    </div>
-                </nav>
-                
-                <footer>
-                    <div class="footer-container">
-                        <div class="footer-icon">
-                        <a target="_blank" href="https://github.com/JustinMartz"><img src="images/github.svg" /></a>
-                        </div>
-                        <div class="footer-icon">
-                        <a target="_blank" href="https://www.linkedin.com/in/justin-martz/"><img src="images/linkedin.svg" /></a>
-                        </div>
-                    </div>
-                </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1280px)" />
+    <link
+      rel="stylesheet"
+      href="css/mobile.css"
+      media="(min-width: 360px) and (max-width: 428px)"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Justin Martz</title>
+  </head>
+  <body>
+    <div class="site-container">
+      <div class="left-side">
+        <header>
+          <div class="header-container">
+            <h1>Justin Martz</h1>
+            <h2>Full-stack Java</h2>
+            <p>
+              Building robust, RESTful backends with accessible, creative
+              frontends.
+            </p>
+          </div>
+        </header>
+
+        <nav>
+          <div class="nav-container">
+            <div class="nav-link">
+              <p><a id="about-link" href="#about">ABOUT</a></p>
             </div>
-            
-            <div class="right-side">
-                <article id="about">
-                    <p>Hello! My name is Justin and I am a recent Skill Distillery full-stack Java graduate living on Colorado's Front Range. My experience is in the full-stack realm building backends with MySQL and Spring Boot and front ends with Angular and TypeScript.</p> 
-                    <br>
-                    <p>I've loved programming since I was a kid making text-based games in QuickBASIC, and can't wait to take this hobby full-time. I'm always learning and expanding my skillset by making new projects.</p>
-                    <br>
-                    <p>When I'm not coding I'm either playing guitar or (more likely) working in the back yard with my wife or (even more likely) hanging out with my kids. </p>
-                    <br>
-                    <p>Check out my projects to see some things I've made!</p>
-                </article>
-                
-                <article id="projects">
-                    <div id="guitartech" class="card-container">
-                        <div class="card-thumb">
-                            <img src="images/guitartech-thumb.png" />
-                        </div>
-                        <div class="card-info">
-                            <div class="card-title">
-                                <h3>GuitarTech</h3>
-                                <span class="arrow">
-                                    <img src="images/up-right-arrow.svg" />
-                                </span>
-                            </div>
-                            <div class="card-description">
-                                <p>Full-stack web app where users can keep track of their guitars and each guitar's setup. Search guitar by color, tuning, and bridge type!</p>
-                            </div>
-                            <div class="card-badges">
-                                <div class="badge"><p>Angular</p></div>
-                                <div class="badge"><p>Spring Boot</p></div>
-                                <div class="badge"><p>MySQL</p></div>
-                                <div class="badge"><p>RESTful API</p></div>
-                                <div class="badge"><p>CSS</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="duality" class="card-container">
-                        <div class="card-thumb">
-                            <img src="images/duality-thumb.png" />
-                        </div>
-                        <div class="card-info">
-                            <div class="card-title">
-                                <h3>Duality</h3>
-                                <span class="arrow">
-                                    <img src="images/up-right-arrow.svg" />
-                                </span>
-                            </div>
-                            <div class="card-description">
-                                <p>Duality allows users to track their daily moods and attitudes using a daily mental well being test. The data is then tracked and saved on an interactive calendar where users can then see how they compare to past days and can in turn find general patterns for a potential upscale in their lifestyles.</p>
-                            </div>
-                            <div class="card-badges">
-                                <div class="badge"><p>Angular</p></div>
-                                <div class="badge"><p>Spring Boot</p></div>
-                                <div class="badge"><p>MySQL</p></div>
-                                <div class="badge"><p>Spring Security</p></div>
-                                <div class="badge"><p>Full-stack</p></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="parkpals" class="card-container">
-                    <div class="card-thumb">
-                        <img src="images/park-pals-thumb.png" />
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title">
-                            <h3>Park Pals</h3>
-                            <span class="arrow">
-                                <img src="images/up-right-arrow.svg" />
-                            </span>
-                        </div>
-                        <div class="card-description">
-                            <p>Park Pals allows registered users to create, join, unattend, or delete meetups with other users. Meetups and discussions are centered around our national parks.</p>
-                        </div>
-                        <div class="card-badges">
-                            <div class="badge"><p>Agile</p></div>
-                            <div class="badge"><p>Pair programming</p></div>
-                            <div class="badge"><p>MySQL</p></div>
-                            <div class="badge"><p>Apache Tomcat</p></div>
-                            <div class="badge"><p>Jakarta Server Pages</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="view-link">
-                    <a target="_blank" href="https://github.com/JustinMartz?tab=repositories">
-                        <h2>View all GitHub projects</h2>
-                    </a>
-                    <span class="arrow"><img src="images/up-right-arrow.svg" /></span>
-                </div>
-            </article>
-            
-            <article id="experience">
-                <div class="card-container">
-                    <div class="dates">
-                        <p><span class="year">2023 </span>MAY - SEP</p><h3>&nbsp;</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title">
-                            <h3>Skill Distillery</h3>
-                            <span class="arrow">
-                                <img src="images/up-right-arrow.svg" />
-                            </span>
-                        </div>
-                        <div class="card-role">
-                            <h2>Full-stack Java Developer Graduate</h2>
-                        </div>
-                        <div class="card-description">
-                            <p>Intensive, immersive, unrelenting full-stack Java developer program teaching a group of core front-end and back-end technologies from the ground up.</p>
-                            <br>
-                            <p>Week after week we were tasked with designing, building, and deploying full-stack applications.</p>
-                        </div>
-                        <div class="card-badges">
-                            <div class="badge"><p>Java</p></div>
-                            <div class="badge"><p>Agile</p></div>
-                            <div class="badge"><p>Pair programming</p></div>
-                            <div class="badge"><p>git</p></div>
-                            <div class="badge"><p>Spring JPA</p></div>
-                            <div class="badge"><p>Spring Boot</p></div>
-                            <div class="badge"><p>Spring Security</p></div>
-                            <div class="badge"><p>Angular</p></div>
-                            <div class="badge"><p>Unit testing</p></div>
-                            <div class="badge"><p>JavaScript</p></div>
-                            <div class="badge"><p>Debugging</p></div>
-                            <div class="badge"><p>SQL</p></div>
-                        </div>
-                    </div>
-                </div> 
-                
-                <div class="view-link">
-                    <a target="_blank" href="Resume-Justin-Martz.pdf">
-                        <h2>View full resume</h2>
-                    </a>
-                    <span class="arrow"><img src="images/up-right-arrow.svg" /></span>
-                </div>
-            </article>
-            
-            <article id="shout-out">
-                <div class="shout-out-container">
-                    <p>This website is heavily inspired and adapted from <a href="https://brittanychiang.com" target="_blank">Brittany Chiang</a>'s portfolio site. Built without frameworks or libraries by Justin Martz, using just CSS, HTML, and JavaScript.</p>
-                </div>
-            </article>
-        </div>
+            <div class="nav-link">
+              <p><a href="#projects">PROJECTS</a></p>
+            </div>
+            <div class="nav-link">
+              <p><a href="#experience">EXPERIENCE</a></p>
+            </div>
+          </div>
+        </nav>
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-icon">
+              <a target="_blank" href="https://github.com/JustinMartz"
+                ><img src="images/github.svg"
+              /></a>
+            </div>
+            <div class="footer-icon">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/justin-martz/"
+                ><img src="images/linkedin.svg"
+              /></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <div class="right-side">
+        <article id="about">
+          <p>
+            Hello! My name is Justin and I am a recent Skill Distillery
+            full-stack Java developer graduate living on Colorado's Front Range.
+            My experience is in the full-stack realm building backends with
+            MySQL and Spring Boot and front ends with Angular and TypeScript.
+          </p>
+          <br />
+          <p>
+            When I'm not coding I'm either playing guitar or (more likely)
+            working in the back yard with my wife or (even more likely) hanging
+            out with my kids.
+          </p>
+          <br />
+          <p>Check out my projects to see some things I've made!</p>
+        </article>
+
+        <article id="projects">
+          <div id="guitartech" class="card-container">
+            <div class="card-thumb">
+              <img src="images/guitartech-thumb.png" />
+            </div>
+            <div class="card-title">
+              <h3>GuitarTech</h3>
+              <span class="arrow">
+                <img src="images/up-right-arrow.svg" />
+              </span>
+            </div>
+            <div class="card-description">
+              <p>
+                Full-stack web app where users can keep track of their guitars
+                and each guitar's setup. Search guitar by color, tuning, and
+                bridge type!
+              </p>
+            </div>
+            <div class="card-badges">
+              <div class="badge"><p>Angular</p></div>
+              <div class="badge"><p>Spring Boot</p></div>
+              <div class="badge"><p>MySQL</p></div>
+              <div class="badge"><p>RESTful API</p></div>
+              <div class="badge"><p>CSS</p></div>
+            </div>
+          </div>
+
+          <div id="duality" class="card-container">
+            <div class="card-thumb">
+              <img src="images/duality-thumb.png" />
+            </div>
+            <div class="card-title">
+              <h3>Duality</h3>
+              <span class="arrow">
+                <img src="images/up-right-arrow.svg" />
+              </span>
+            </div>
+            <div class="card-description">
+              <p>
+                Duality allows users to track their daily moods and attitudes
+                using a daily mental well being test. The data is then tracked
+                and saved on an interactive calendar where users can then see
+                how they compare to past days and can in turn find general
+                patterns for a potential upscale in their lifestyles.
+              </p>
+            </div>
+            <div class="card-badges">
+              <div class="badge"><p>Angular</p></div>
+              <div class="badge"><p>Spring Boot</p></div>
+              <div class="badge"><p>MySQL</p></div>
+              <div class="badge"><p>Spring Security</p></div>
+              <div class="badge"><p>Full-stack</p></div>
+            </div>
+          </div>
+
+          <div id="parkpals" class="card-container">
+            <div class="card-thumb">
+              <img src="images/park-pals-thumb.png" />
+            </div>
+            <div class="card-title">
+              <h3>Park Pals</h3>
+              <span class="arrow">
+                <img src="images/up-right-arrow.svg" />
+              </span>
+            </div>
+            <div class="card-description">
+              <p>
+                Park Pals allows registered users to create, join, unattend, or
+                delete meetups with other users. Meetups and discussions are
+                centered around our national parks.
+              </p>
+            </div>
+            <div class="card-badges">
+              <div class="badge"><p>Agile</p></div>
+              <div class="badge"><p>Pair programming</p></div>
+              <div class="badge"><p>MySQL</p></div>
+              <div class="badge"><p>Apache Tomcat</p></div>
+              <div class="badge"><p>JSP</p></div>
+            </div>
+          </div>
+          <div class="view-link">
+            <a
+              target="_blank"
+              href="https://github.com/JustinMartz?tab=repositories"
+            >
+              <h2>View all GitHub projects</h2>
+            </a>
+            <span class="arrow"><img src="images/up-right-arrow.svg" /></span>
+          </div>
+        </article>
+
+        <article id="experience">
+          <div class="card-container">
+            <div class="dates">
+              <p><span class="year">2023 </span>MAY - SEP</p>
+              <h3>&nbsp;</h3>
+            </div>
+            <div class="card-title">
+              <h3>Skill Distillery</h3>
+            </div>
+            <div class="card-description">
+              <div class="card-role">
+                <h2>Full-stack Java Developer Graduate</h2>
+              </div>
+              <p>
+                Intensive, immersive, unrelenting full-stack Java developer
+                program teaching a group of core front-end and back-end
+                technologies from the ground up.
+              </p>
+              <br />
+              <p>
+                Week after week we were tasked with designing, building, and
+                deploying full-stack applications.
+              </p>
+            </div>
+            <div class="card-badges">
+              <div class="badge"><p>Java</p></div>
+              <div class="badge"><p>Agile</p></div>
+              <div class="badge"><p>Pair programming</p></div>
+              <div class="badge"><p>git</p></div>
+              <div class="badge"><p>Spring JPA</p></div>
+              <div class="badge"><p>Spring Boot</p></div>
+              <div class="badge"><p>Spring Security</p></div>
+              <div class="badge"><p>Angular</p></div>
+              <div class="badge"><p>Unit testing</p></div>
+              <div class="badge"><p>JavaScript</p></div>
+              <div class="badge"><p>Debugging</p></div>
+              <div class="badge"><p>SQL</p></div>
+            </div>
+          </div>
+
+          <div class="view-link">
+            <a target="_blank" href="Justin-Martz-Resume-web.pdf">
+              <h2>View full resume</h2>
+            </a>
+            <span class="arrow"><img src="images/up-right-arrow.svg" /></span>
+          </div>
+        </article>
+
+        <article id="shout-out">
+          <div class="shout-out-container">
+            <p>
+              This website is heavily inspired and adapted from
+              <a href="https://brittanychiang.com" target="_blank"
+                >Brittany Chiang</a
+              >'s portfolio site. Built without frameworks or libraries by
+              Justin Martz, using just CSS, HTML, and JavaScript.
+            </p>
+          </div>
+        </article>
+      </div>
     </div>
-    <script src="test.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

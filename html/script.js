@@ -5,6 +5,7 @@ function init() {
     const guitarTechURL = 'http://3.13.216.67:8080/GuitarTech/';
     const dualityURL = 'http://3.131.63.12:8080/Duality';
     const parkpalsURL = 'http://3.13.216.67:8080/ParkPals/';
+    const aboutLink = document.getElementById('about-link');
     
     document.getElementById('guitartech').addEventListener('click', () => {
         window.open(guitarTechURL, '_blank');
@@ -16,6 +17,15 @@ function init() {
 
     document.getElementById('parkpals').addEventListener('click', () => {
         window.open(parkpalsURL, '_blank');
+    });
+
+    aboutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
     });
 
     function setActiveLink() {

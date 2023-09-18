@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: rgb(3,13,32);
+    background: linear-gradient(90deg, rgba(3,13,32,1) 0%, rgba(1,37,66,1) 32%, rgba(1,37,66,1) 85%, rgba(3,13,32,1) 100%); 
+    overscroll-behavior: none;
+    scroll-behavior: auto;
+    font-size: 100%;
+}
+
+body {
+    margin-left: 5vw;
+    margin-right: 5vw;   
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    /* font-size: 3rem; */
+    font-size: 2.488rem;
+    color:  #EBE8E2;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color:  #EBE8E2;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #b9d6f2; 
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    color: #007baa;
+}
+
+article {
+    margin-bottom: 10vh;
+}
+
+header {
+    margin-top: 5vh;
+}
+
+.site-container {
+    /* display: flex; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-side {
+    height: 100%;
+    flex: 0 0 auto;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 5vh; */
+}
+
+.left-side > * {
+    flex-grow: 1;
+    min-height: 5vh;
+}
+
+.right-side {
+    flex: 1;
+    overflow-y: scroll;
+    margin-top: 5vh;
+    /* margin-left: 40vw; */
+    margin-bottom: 10vh;
+}
+
+.nav-container {
+    display: none;
+}
+
+.footer-icon {
+    display: inline-block;
+    width: fit-content;
+    margin-right: 2rem;
+}
+
+.footer-icon img {
+    height: 30px;
+    filter: invert(24%) sepia(99%) saturate(1778%) hue-rotate(181deg) brightness(92%) contrast(102%);
+}
+
+.footer-container img:hover {
+    cursor: pointer;
+    filter: invert(81%) sepia(49%) saturate(1168%) hue-rotate(120deg) brightness(104%) contrast(106%);
+}
+
+.card-container {
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgba(0, 53, 89, 1);
+    cursor: pointer;
+    border-top: 1px solid #006daa;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto; /* Updated */
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+}
+
+.card-thumb {
+    grid-area: 1 / 1 / 2 / 2;
+    /* height: fit-content; */
+}
+
+.card-thumb img {
+    border-radius: 5px;
+    max-width: 100%;
+    border: 2px solid #b9d6f2;
+}
+
+.card-title {
+    grid-area: 1 / 2 / 2 / 3;
+    max-height: 100%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.card-title h3 {
+    font-size: 1.2rem;
+    display: inline;
+}
+
+.card-description {
+    margin-bottom: .5rem;
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.card-badges {
+    grid-area: 3 / 1 / 4 / 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+    height: fit-content;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #00527f;
+    width: fit-content;
+    padding: .25rem .75rem .25rem .75rem;
+    border-radius: 15px;
+    margin-right: .5rem;
+}
+
+.badge p {
+    display: inline;
+    color: cyan;
+    font-size: .8rem;
+}
+
+.card-role h2 {
+    color: #b9d6f2;
+}
+
+.arrow img {
+    vertical-align: bottom;
+    display: inline-block;
+    animation-name: grow, textShine;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1) translate(0px, 0px);
+    }
+    100% {
+        transform: scale(1.5) translate(5px, -5px);
+    }
+}
+
+@keyframes textShine {
+    0% {
+        filter: invert(25%) sepia(91%) saturate(1674%) hue-rotate(173deg) brightness(102%) contrast(101%);
+    }
+    10% {
+        filter: invert(45%) sepia(82%) saturate(4243%) hue-rotate(168deg) brightness(90%) contrast(104%);
+    }
+    20% {
+        filter: invert(56%) sepia(64%) saturate(5361%) hue-rotate(161deg) brightness(93%) contrast(101%);
+    }
+    30% {
+        filter: invert(44%) sepia(89%) saturate(1535%) hue-rotate(154deg) brightness(96%) contrast(103%);
+    }
+    40% {
+        filter: invert(68%) sepia(20%) saturate(7478%) hue-rotate(142deg) brightness(92%) contrast(102%);  
+    }
+    50% {
+        filter: invert(58%) sepia(84%) saturate(1532%) hue-rotate(139deg) brightness(99%) contrast(102%);   
+    }
+    60% {
+        filter: invert(78%) sepia(70%) saturate(3897%) hue-rotate(134deg) brightness(101%) contrast(106%);
+    }
+    70% {
+        filter: invert(78%) sepia(51%) saturate(2377%) hue-rotate(125deg) brightness(100%) contrast(101%);
+    }
+    80% {
+        filter: invert(86%) sepia(48%) saturate(855%) hue-rotate(112deg) brightness(103%) contrast(104%);
+    }
+    100% {
+        filter: invert(86%) sepia(48%) saturate(855%) hue-rotate(112deg) brightness(103%) contrast(104%);
+    }
+}
+
+.view-link {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+.view-link h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.view-link img {
+    vertical-align: top;
+    display: inline;
+    /* filter: invert(24%) sepia(99%) saturate(1778%) hue-rotate(181deg) brightness(92%) contrast(102%); */
+    /* transition: all 0.2s ease; */
+}
+
+.view-link h2::after {
+}
+
+.shout-out-container p {
+    font-size: .8rem;
+}
+
+.shout-out-container a {
+    text-decoration: none;
+}
+
+.shout-out-container a:visited {
+    color: cyan;
+    text-decoration: none;
+}
+
+.year {
+    color: cyan;
+    font-weight: 700;
+}
+    
+
+.shout-out-container p {
+    font-size: .8rem;
+}
+
+.shout-out-container a {
+    text-decoration: none;
+}
+
+.shout-out-container a:visited {
+    color: cyan;
+    text-decoration: none;
+}
+
+.year {}
+    
+color: cyan;
+    fontfont-weight: ;700   
+}
+
+.view-link a {
+    text-decoration: none;
+}
+
+.card-role h2 {
+    display: none;
+    font-size: 1rem;
+}
+
+.year {
+    color: cyan;
+    font-weight: 700;
+}
+
+.shout-out-container p {
+    font-size: .8rem;
+}
+
+.shout-out-container a {
+    text-decoration: none;
+}
+
+.shout-out-container a:visited {
+    color: cyan;
+    text-decoration: none;
+}
+
+#experience .card-container {
+    cursor: default;
+}

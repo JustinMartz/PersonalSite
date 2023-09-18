@@ -54,7 +54,8 @@ h3 {
 p {
     font-family: 'Inter', sans-serif;
     font-weight: 200;
-    color: #006daa;
+    /* color: #006daa; */
+    color: #007baa;
 }
 
 .site-container {
@@ -92,6 +93,8 @@ p {
 }
 
 .nav-container {
+    margin: 0;
+    padding: 0;
 }
 
 .nav-container a {
@@ -105,8 +108,9 @@ p {
 }
 
 .nav-container div {
-    display: flex; /* Add this line */
-    align-items: center; /* Add this line */
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
@@ -119,13 +123,11 @@ p {
 }
 
 .active::before {
-    vertical-align: middle;
+    display: inline-block; 
     content: '•';
     color: cyan;
-    font-size: 1.4em;
+    font-size: .9rem;
     margin-right: 1rem;
-    display: inline-block; /* Add this line to center the bullet */
-    line-height: 1; /* Add this line to center vertically */
 }
 
 .active a {
