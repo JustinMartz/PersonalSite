@@ -305,6 +305,11 @@ color: cyan;
     font-weight: 700;
 }
 
+.shout-out-container {
+    width: 75%;
+    margin: auto;
+}
+
 .shout-out-container p {
     font-size: .8rem;
 }

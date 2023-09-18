@@ -13,11 +13,12 @@ html {
     background: linear-gradient(90deg, rgba(3,13,32,1) 0%, rgba(1,37,66,1) 32%, rgba(1,37,66,1) 85%, rgba(3,13,32,1) 100%); 
     overscroll-behavior: none;
     scroll-behavior: auto;
+    font-size: calc(14px + (16 - 14) * ((100vw - 600px) / (1280 - 300)));
 }
 
 body {
-    margin-left: 10vw;
-    margin-right: 10vw;   
+    margin-left: 5vw;
+    margin-right: 5vw;   
 }
 
 article {
@@ -30,10 +31,11 @@ header {
 
 h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color:  #EBE8E2;
     white-space: nowrap;
     margin-bottom: 1rem;
+    line-height: .75;
 }
 
 h2 {
@@ -47,7 +49,7 @@ h2 {
 h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #b9d6f2; 
 }
 
@@ -76,7 +78,7 @@ p {
 
 .left-side > * {
     flex-grow: 1;
-    min-height: 300px;
+    min-height: 100px;
 }
 
 .right-side {
@@ -90,6 +92,11 @@ p {
 .header-container {
     display: table;
     width: 1%;
+}
+
+.nav-container {
+    margin: 0;
+    padding: 0;
 }
 
 .nav-container {
@@ -135,6 +142,10 @@ p {
     color: #b9d6f2;
 }
 
+.footer-container {
+    width: fit-content;
+}
+
 .footer-icon {
     display: inline-block;
     width: fit-content;
@@ -155,7 +166,7 @@ p {
     height: fit-content;
     width: 100%;
     border-radius: 10px;
-    padding: 2rem;
+    padding: calc(2vw);
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto; /* Updated */
@@ -195,13 +206,31 @@ p {
 .card-thumb img {
     border: 2px solid #006daa;
     border-radius: 5px;
-    width: 225px;
+    min-width: 150px;
+    width: calc(30vw - 150px);
 }
+
+@media (max-width: 839px) {
+    .card-thumb img {
+        border: 2px solid #006daa;
+        border-radius: 5px;
+        min-width: 120px;
+    } 
+}
+
+@media (max-width: 839px) {
+    .card-thumb img {
+        border: 2px solid #006daa;
+        border-radius: 5px;
+        min-width: 100px;
+    } 
+}
+  
 
 .card-role h2 {
     color: #b9d6f2;
-    width: 50%;
-    margin-left: 50%;
+    /* width: 50%; */
+    margin-left: calc(50% );
 }
 
 .card-description {
@@ -221,7 +250,7 @@ p {
 }
 
 .card-badges div {
-    margin-top: 1rem;
+    margin-top: 1vh;
 }
 
 .badge {
@@ -230,7 +259,7 @@ p {
     width: fit-content;
     padding: .25rem .75rem .25rem .75rem;
     border-radius: 15px;
-    margin-right: 1rem;
+    margin-right: 1vw;
 }
 
 .badge p {
@@ -245,6 +274,7 @@ p {
 
 .card-title h3 {
     display: inline;
+    font-size: 1.5rem;
 }
 
 .arrow img {
